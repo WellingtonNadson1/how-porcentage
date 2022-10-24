@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantos Porcentos</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+
+  <div class="hidden sm:block" aria-hidden="true">
+    <div class="py-5">
+      <div class="border-t border-gray-200"></div>
+    </div>
+  </div>
+
+  <div class="mt-10 sm:mt-0 p-4 flex justify-center items-center">
+    <div class="md:grid md:grid-cols-1 md:gap-6">
+      <div class="md:col-span-1">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-medium leading-6 text-gray-900">Quantos Porcentos % Tenho?</h3>
+          <p class="mt-1 text-sm text-gray-600">Calcule quantos porcentos você terá de forma fácil.</p>
+        </div>
+      </div>
+      <div class="mt-5 md:col-span-2 md:mt-0">
+        <form id="form">
+          <div class="overflow-hidden shadow sm:rounded-md">
+            <div class="bg-white px-4 py-5 sm:p-6">
+              <div class="grid grid-cols-6 gap-6">
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="first-name" class="block text-sm font-medium text-gray-700">Total (100%)</label>
+                  <input type="text" data-js="totalPorcento" name="first-name" id="first-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                </div>
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="last-name" class="block text-sm font-medium text-gray-700">Quanto tenho?</label>
+                  <input type="text" data-js="meuPorcento" name="last-name" id="last-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                </div>
+                </div>
+
+                <div class="col-span-6 sm:col-span-6 lg:col-span-2 mt-2">
+                  <label for="result" class="block text-sm font-medium text-gray-700">Valor de quanto tenho em %</label>
+                  <input type="text" data-js="result" name="result" id="result" class="disabled:opacity-100 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
+              <button type="submit" data-js="btnSubmit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Calcular</button>
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
